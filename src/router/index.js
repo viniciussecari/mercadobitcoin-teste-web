@@ -6,6 +6,10 @@ import FourthStep from "../views/FourthStep.vue";
 
 const routes = [
   {
+    path: "",
+    redirect: { path: "/registration/first-step" },
+  },
+  {
     path: "/registration/first-step",
     name: "first-step",
     component: FirstStep,
@@ -31,7 +35,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

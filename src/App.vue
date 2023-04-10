@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-view />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,7 +16,6 @@
 
 label
   font-weight: bold
-
 
 input[type="text"], input[type="password"]
   padding-left: 4px
